@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tech </title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="./main.js"></script>
+  <script src="./functions.js"></script>
+  <script src="./users.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+
+<!-- 
+
+  id = #
+  class - .
+ -->
+
+<body>
+  <!-- 
+  <div>123451</div>
+  <div>
+    <h1>H1 - H2 </h1>
+    <h2 id="by_id">Tech by ID</h2>
+    <h3 class="by_class">Tech by CLASS</h3>
+    <h4 class="by_class">Tech by CLASS</h4>
+    <h5 class="by_class">Tech by CLASS</h5>
+    <h6 class="by_class">Tech by CLASS</h6>
+  </div>
+  ----- Paragraph
+  <div>
+    <p>123412</p>
+    <p>123412</p>
+    <p>123412</p>
+  </div>
+
+  <div>
+    <span>123412</span>
+    <span>123412</span>
+    <span>123412</span>
+  </div>
+
+  ----- Forma
+  -->
+  <!--
+  <div>
+    <textarea maxlength="255" rows="5" onchange="console.log('changed')"></textarea>
+     <form action="https://....ru/api/auth" method="POST"> 
+      <p>checkbox</p>
+      <input type="checkbox" name="email" placeholder="checkbox" />
+      <p>radio</p>
+      <input type="radio" name="radio" />
+      <p>password</p>
+      <input type="password" name="radio" />
+      <br />
+      <input type='number' name="password" />
+      <br />
+      <input name="login" />
+      <br />
+      <button onclick="mainFunction()">отправить</button>
+  </form> 
+  </div>
+  -->
+
+  ---- Root element
+  <div id="root">
+    <div>
+      <button onclick="methodGetUsers()">Получить список</button>
+      <button onclick="$('table tbody').children().remove(); alert('Таблица очищена!')">Очистить</button>
+    </div>
+    <table cellspacing="2" border="1" cellpadding="5">
+      <thead>
+        <tr >
+          <th>№</th>
+          <th>Пользователь</th>
+          <th>Задача</th>
+          <th>Выполнено</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script src="./dom.js"></script>
+</body>
+
+
+</html>
